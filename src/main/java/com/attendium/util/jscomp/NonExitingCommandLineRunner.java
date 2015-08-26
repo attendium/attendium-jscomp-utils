@@ -1,13 +1,12 @@
 package com.attendium.util.jscomp;
 
-import com.google.javascript.jscomp.*;
-import com.google.javascript.jscomp.Compiler;
+import java.security.Permission;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.security.Permission;
-import java.util.HashSet;
-import java.util.Set;
+import com.google.javascript.jscomp.CommandLineRunner;
+import com.google.javascript.jscomp.Compiler;
 
 public class NonExitingCommandLineRunner extends CommandLineRunner {
 
